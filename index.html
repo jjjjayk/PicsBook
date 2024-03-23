@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyles.css">
+    <title>PicsBook</title>
+</head>
+<body onload="getTheme(), fadeIn()" >
+    <section>
+    <div class="nav-wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <a class="home" href="index.html"><img class="logo" src="logo.png" alt="logo"><li class="logo-text">PicsBook</li></a>
+                    <a class="explore-link" href="explore.html"><li class="explore">Explore</li></a>
+                    <input id="settings-toggle" class="hidden" type="checkbox">
+                    <label class="toggle" for="settings-toggle">
+                        <img class="settings" src="cogwheel.png" alt="settings">
+                    </label>
+                    <div class="settings-ui hidden">
+                        <h1>Themes</h1>
+                        <button id="lightButton">Light</button>
+                        <button id="darkButton">Dark</button>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    </section>
+    <div class="snap-container">
+        <section class="first snap">
+            <h1>A fancier photo gallery</h1>
+            <p>For your needs</p>
+            <div aria-hidden="true" class="wrapper-container">
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-1.jfif" alt="">
+                </div>
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-2.jfif" alt="">
+                </div>
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-3.jfif" alt="">
+                </div>
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-4.jfif" alt="">
+                </div>
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-5.jfif" alt="">
+                </div>
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-6.jfif" alt="">
+                </div>
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-7.jfif" alt="">
+                </div>
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-8.jfif" alt="">
+                </div>
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-9.jfif" alt="">
+                </div>
+                <div class="emptywr wrapper"></div>
+                <div class="emptywr wrapper"></div>
+                <div class="emptywr wrapper"></div>
+                <div class="imgwr wrapper">
+                    <img src="./landing-images/1-10.jfif" alt="">
+                </div>
+                <div class="imgwr wrapper">
+                        <img src="./landing-images/1-11.jfif" alt="">
+                </div>
+            </div>
+            <div aria-hidden="true" class="blur"></div>
+        </section>
+        <section class="second snap">
+            <div aria-hidden="true" class="left-side">
+                <div class="sect2-container">
+                    <div class="sect2-imgwr">
+                        <img src="./landing-images/2-1.jfif" alt="">
+                    </div>
+                    <div class="sect2-imgwr">
+                        <img src="./landing-images/2-2.jfif" alt="">
+                    </div>
+                    <div class="sect2-imgwr">
+                        <img src="./landing-images/2-3.jfif" alt="">
+                    </div>
+                    <div class="sect2-imgwr">
+                        <img src="./landing-images/2-4.jfif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div aria-hidden="true" class="right-side">
+                <h1>Save your images</h1>
+                <p>Easily accessible anywhere</p>
+                <p>all in one place</p>
+            </div>
+        </section>
+        <section class="third snap">
+            <div aria-hidden="true" class="overlay">
+                <h1 class="cover-character">P</h1>
+                <h1 class="cover-character">i</h1>
+                <h1 class="cover-character">c</h1>
+                <h1 class="cover-character">s</h1>
+                <h1 class="cover-character">B</h1>
+                <h1 class="cover-character">o</h1>
+                <h1 class="cover-character">o</h1>
+                <h1 class="cover-character">k</h1>
+            </div>
+            <img class="cover visible" src="./landing-images/cover1.jfif" alt="first cover image">
+            <img class="cover" src="./landing-images/cover2.jfif" alt="second cover image">
+            <img class="cover" src="./landing-images/cover3.jfif" alt="third cover image">
+        </section>
+    </div>
+<script src="theme.js"></script>
+<script src="smooth-snap.js"></script>
+<script src="fade-in-animation.js"></script>
+<script src="slideshow.js"></script>
+</body>

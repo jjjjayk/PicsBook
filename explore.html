@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PicsBook</title>
+</head>
+<body onload="getTheme(), appendImg()">
+    <section>
+    <div class="nav-wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <a class="home" href="index.html"><img class="logo" src="logo.png" alt="logo"><li class="logo-text">PicsBook</li></a>
+                    <a class="explore-link" href="explore.html"><li class="explore">Explore</li></a>
+                    <input id="settings-toggle" class="hidden" type="checkbox">
+                    <label class="toggle" for="settings-toggle">
+                        <img class="settings" src="cogwheel.png" alt="settings">
+                    </label>
+                    <div class="settings-ui hidden">
+                        <h1>Themes</h1>
+                        <button id="lightButton">Light</button>
+                        <button id="darkButton">Dark</button>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    </section>
+    <section>
+    <main>
+        <section class="pinboard">
+            <!--
+            <div class="pin">
+                <img src="" alt="">
+            </div>
+            -->
+        </section>
+    </main>
+    </section>
+    <script src="theme.js"></script>
+    <script src="append-image.js"></script>
+</body>
+</html>
